@@ -1,0 +1,121 @@
+{
+    "info": {
+        "_postman_id": "7ea973c4-4afe-42ae-80c7-f57ca00fc15b",
+        "name": "apiProveedor",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "getAll",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:4100/api/proveedor",
+                    "path": [
+                        "api",
+                        "proveedor"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "4100"
+                }
+            }
+        },
+        {
+            "name": "GetById",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:4100/api/proveedor/1",
+                    "path": [
+                        "api",
+                        "proveedor",
+                        "1"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "4100"
+                }
+            }
+        },
+        {
+            "name": "update",
+            "request": {
+                "method": "PUT",
+                "url": {
+                    "raw": "http://localhost:4100/api/proveedor/1",
+                    "path": [
+                        "api",
+                        "proveedor",
+                        "1"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "4100"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"id\": 1,\n  \"nit\": \"23_123_435\",\n  \"nombre\": \"Davith.SA\",\n  \"contacto\": \"789988\",\n  \"email\": \"pedro@gmail.com\",\n  \"telefono\": \"3219817460\",\n  \"ciudad\": \"Cartago\",\n  \"estado\": \"activo\",\n  \"fecha\": \"2026-11-09 07:36:23\"\n}"
+                }
+            }
+        },
+        {
+            "name": "create",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:4100/api/proveedor",
+                    "path": [
+                        "api",
+                        "proveedor"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "4100"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"nit\": \"900123456-1\",\n  \"nombre\": \"Distribuidora ABC\",\n  \"contacto\": \"Carlos\",\n  \"email\": \"contacto@abc.com\",\n  \"telefono\": \"3001234567\",\n  \"ciudad\": \"Cali\",\n  \"estado\": \"Activo\"\n}"
+                }
+            }
+        },
+        {
+            "name": "delete",
+            "request": {
+                "method": "DELETE",
+                "url": {
+                    "raw": "http://localhost:4100/api/proveedor/2",
+                    "path": [
+                        "api",
+                        "proveedor",
+                        "2"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "4100"
+                }
+            }
+        }
+    ]
+}
